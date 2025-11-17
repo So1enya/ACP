@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periódico</title>
+    <!-- inclusion del css y del js -->
+    <style src="./assets/generic.css"></style>
+    <script src="./assets/js/master.js"></script>
+    <!-- inclusion del bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></head>
+    <!-- immplementacion del favicon -->
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png"></link>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-md-center">Menu principal</h1>
+        </div>
+    </div>
+</div>     
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Menu principal</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">vuelta al nav</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#texto1">texto 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#texto2">texto 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">#footer</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>   
+</nav>
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <p id="texto1"><img src="./assets/img/caracol.jpg" width="50px" alt="caracol"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quo repellat natus dolorem cum, molestiae aperiam officiis voluptatum 
+                voluptate debitis sed accusamus soluta illum excepturi exercitationem 
+                mollitia eaque molestias tenetur? Saepe.</p>
+        </div>
+
+        <div class="col-md-6">
+            <p id="texto2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Doloremque consequatur obcaecati, delectus nostrum animi dolorem eveniet
+                architecto necessitatibus eos pariatur nihil quod asperiores 
+                reprehenderit laboriosam blanditiis hic at commodi maiores!</p>
+        </div>
+    </div>
+
+    <footer id="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa in neque id sapiente nostrum quaerat deleniti voluptas quam debitis doloribus facilis eveniet dolore, itaque voluptate laudantium maiores quae placeat sunt?</footer>
+</body>
+</html>
