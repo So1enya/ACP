@@ -13,6 +13,101 @@
     <link rel="icon" type="image/png" href="./assets/img/favicon.png"></link>
 </head>
 <body>
+    <header>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <main>
+                    <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="nombre">Nombre</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Nombre" aria-describedby="basic-addon1">
+                    </div>
+
+
+                    <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="apellidos">Apellidos</span>
+                    </div>
+                    <input type="text" class="form-control">
+                    <input type="text" class="form-control">
+                    </div>
+
+                    <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="nacimiento">Fecha de nacimiento</span>
+                    </div>
+                    <input type="date" class="form-control" aria-label="fecha de nacimiento" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="mano">Mano dominante</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Mano" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="genero">Genero</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Genero" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="direccion">Direccion</span>
+                    </div>
+                    <input type="text" class="form-control" aria-label="Nombre" aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="apellidos">Apellidos</span>
+                    </div>
+                    <input type="text" class="form-control">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control">
+                    <span class="input-group-text">.</span>
+                    <input type="text" class="form-control">
+                    </div>
+                 </main></div>
+             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quo repellat natus dolorem cum, molestiae aperiam officiis voluptatum 
+                voluptate debitis sed accusamus soluta illum excepturi exercitationem 
+                mollitia eaque molestias tenetur? Saepe.</p>
+        </div>
+
+        <div class="col-md-8">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Doloremque consequatur obcaecati, delectus nostrum animi dolorem eveniet
+                architecto necessitatibus eos pariatur nihil quod asperiores 
+                reprehenderit laboriosam blanditiis hic at commodi maiores!</p>
+        </div>
+    </div>
+                </div> 
+</div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto provident, assumenda amet eligendi veritatis ipsam. Porro voluptas quia, id est maiores nam, nulla, consectetur commodi recusandae perspiciatis soluta qui vitae.</p>
+            </div>
+        </div> 
+    </header>
+    <!-- <main>
         <div class="input-group mb-2">
         <div class="input-group-prepend">
             <span class="input-group-text" id="nombre">Nombre</span>
@@ -67,5 +162,6 @@
         <span class="input-group-text">.</span>
         <input type="text" class="form-control">
         </div>
+    </main> -->
 </body>
 </html>
