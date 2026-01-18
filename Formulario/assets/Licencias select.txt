@@ -1,0 +1,37 @@
+Vehículos
+	Motos - AM
+	Motos - A1
+	Motos - A2
+	Motos - A
+	Coche - B
+	Camión - C1
+	Camión - C
+	Autobús - D1
+	Autobús - D
+	Coche - BE
+	Camión - C1E
+	Camión - CE
+	Autobús - D1E
+	Autobús - DE
+	Mov. red. - LCM
+	Agrícola - LVA
+	Mercancías peligrosas - ADR
+Armas
+	Militar - A
+	Pistola - B
+	Vigilancia - C
+	Caza - D
+	Deportivo - E
+	Galería de tiro - F
+Navegación
+	Básica - Licencia
+	Recreo - PNB
+	Recreo - PER
+	Recreo - PPER
+	Navegación - PY
+	Navegación - CY
+	Navegación - PCY
+Drones
+	Drones - A1-A3
+	Drones - A2
+	Drones - STS

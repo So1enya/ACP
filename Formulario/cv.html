@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS y JS propios -->
+    <link rel="stylesheet" href="./assets/css/generic.css">
+    <script src="./assets/js/master.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+</head>
+<body>
+    <h1>CV</h1>
+    <div class="input-group mb-2">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="nombre">Estudios</span>
+        </div>
+        <input type="text" class="form-control" aria-label="Nombre" aria-describedby="basic-addon1">
+        </div>
+
+
+        <div class="input-group mb-2">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="apellidos">Trabajos</span>
+        </div>
+        <input type="text" class="form-control">
+        
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="idioma">Idiomas
+            <div class="form-control"></div>
+                <input type="checkbox" name="Español" id="español" checked>
+                <label class="form-control label" for="español" >Español</label>
+
+                <input type="checkbox" name="Gallego" id="gallego">
+                <label class="form-control label" for="gallego" >Gallego</label>
+
+                <input type="checkbox" name="Inglés" id="ingles">
+                <label class="form-control label" for="ingles" >Ingles</label>
+
+                <input type="checkbox" name="Francés" id="franchute">
+                <label class="form-control label" for="franchute" >Frances</label>
+
+                <input type="checkbox" name="Alemán" id="aleman">
+                <label class="form-control label" for="aleman" >Aleman</label>
+            </div>
+            </span>
+
+        </div>
+
+        <div class="input-group mb-3">
+    <span class="input-group-text">Licencias</span>
+    <div class="form-control">
+
+        <!-- VEHÍCULOS -->
+        <strong>Vehículos</strong><br>
+
+        <input type="checkbox" id="am">
+        <label for="am">Motos - AM</label><br>
+
+        <input type="checkbox" id="a1">
+        <label for="a1">Motos - A1</label><br>
+
+        <input type="checkbox" id="a2">
+        <label for="a2">Motos - A2</label><br>
+
+        <input type="checkbox" id="a">
+        <label for="a">Motos - A</label><br>
+
+        <input type="checkbox" id="b">
+        <label for="b">Coche - B</label><br>
+
+        <input type="checkbox" id="c1">
+        <label for="c1">Camión - C1</label><br>
+
+        <input type="checkbox" id="c">
+        <label for="c">Camión - C</label><br>
+
+        <input type="checkbox" id="d1">
+        <label for="d1">Autobús - D1</label><br>
+
+        <input type="checkbox" id="d">
+        <label for="d">Autobús - D</label><br>
+
+        <input type="checkbox" id="be">
+        <label for="be">Coche - BE</label><br>
+
+        <input type="checkbox" id="c1e">
+        <label for="c1e">Camión - C1E</label><br>
+
+        <input type="checkbox" id="ce">
+        <label for="ce">Camión - CE</label><br>
+
+        <input type="checkbox" id="d1e">
+        <label for="d1e">Autobús - D1E</label><br>
+
+        <input type="checkbox" id="de">
+        <label for="de">Autobús - DE</label><br>
+
+        <input type="checkbox" id="lcm">
+        <label for="lcm">Mov. reducida - LCM</label><br>
+
+        <input type="checkbox" id="lva">
+        <label for="lva">Agrícola - LVA</label><br>
+
+        <input type="checkbox" id="adr">
+        <label for="adr">Mercancías peligrosas - ADR</label><br><br>
+
+        <!-- ARMAS -->
+        <strong>Armas</strong><br>
+
+        <input type="checkbox" id="arma-a">
+        <label for="arma-a">Militar - A</label><br>
+
+        <input type="checkbox" id="arma-b">
+        <label for="arma-b">Pistola - B</label><br>
+
+        <input type="checkbox" id="arma-c">
+        <label for="arma-c">Vigilancia - C</label><br>
+
+        <input type="checkbox" id="arma-d">
+        <label for="arma-d">Caza - D</label><br>
+
+        <input type="checkbox" id="arma-e">
+        <label for="arma-e">Deportivo - E</label><br>
+
+        <input type="checkbox" id="arma-f">
+        <label for="arma-f">Galería de tiro - F</label><br><br>
+
+        <!-- NAVEGACIÓN -->
+        <strong>Navegación</strong><br>
+
+        <input type="checkbox" id="nav-basica">
+        <label for="nav-basica">Básica - Licencia</label><br>
+
+        <input type="checkbox" id="pnb">
+        <label for="pnb">Recreo - PNB</label><br>
+
+        <input type="checkbox" id="per">
+        <label for="per">Recreo - PER</label><br>
+
+        <input type="checkbox" id="pper">
+        <label for="pper">Recreo - PPER</label><br>
+
+        <input type="checkbox" id="py">
+        <label for="py">Navegación - PY</label><br>
+
+        <input type="checkbox" id="cy">
+        <label for="cy">Navegación - CY</label><br>
+
+        <input type="checkbox" id="pcy">
+        <label for="pcy">Navegación - PCY</label><br><br>
+
+        <!-- DRONES -->
+        <strong>Drones</strong><br>
+
+        <input type="checkbox" id="drones-a1a3">
+        <label for="drones-a1a3">Drones - A1/A3</label><br>
+
+        <input type="checkbox" id="drones-a2">
+        <label for="drones-a2">Drones - A2</label><br>
+
+        <input type="checkbox" id="drones-sts">
+        <label for="drones-sts">Drones - STS</label>
+
+    </div>
+</div>
+
+
+    </div>
+    
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+.menu-principal .icono-menu {
+    padding-left: 40px;
+    position: relative;
+}
+
+.menu-principal .icono-menu::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/favicon.png");
+    /* reutilizo el favicon */
+    background-size: cover;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
