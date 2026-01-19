@@ -1,0 +1,3 @@
+la pestaña de contactos es un extra, se hace un formulario de nombre correo y comentario en unos textareas, los nombres y correo sale algo de float label, el nombre de la etiqueta esta dentro del cuadro de texto y en cuanto empiezaS a escribir se mueve a la parte superior, aun dentro pero en pequeño
+
+añadirle un icono a cada boton del este es un extra.
