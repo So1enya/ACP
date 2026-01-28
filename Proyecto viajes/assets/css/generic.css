@@ -6,25 +6,44 @@
     box-sizing: border-box;
     line-height: 1.7;
 }
-/* =====================    Variables    ===================== */
+
+/*=============================================
+=            Variables            =
+=============================================*/
+
 :root {
-    --color-fondo: rgb(92, 9, 26);
-    --color-barra: rgb(66, 16, 16);
+    --color-fondo: #3f704d;
+    --color-barra: #1a2421;
     --color-activo: rgb(92, 9, 26);
     --color-texto: #ffffff;
     --color-hover: #f8d7da;
     --color-borde-activo: #ffd700;
 }
 
-/* =====================    BODY    ===================== */
+/*=====  End of Variables  ======*/
+
+
+
+
+/*=============================================
+=            body            =
+=============================================*/
+
 body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
 }
 
-/* =====================
-   HEADER + FOOTER
-   ===================== */
+/*=====  End of body  ======*/
+
+
+
+
+
+/*=============================================
+=            header            =
+=============================================*/
+
 .header,
 .footer-principal {
     width: 100%;
@@ -33,22 +52,9 @@ body {
 }
 
 
-
-/* =====================
-   MAIN
-   ===================== */
-
-.carousel-item img {
-    width: 100%;
-    height: 800px;
-    object-fit: cover;
-}
+/* menu -------------*/
 
 
-
-/* =====================
-   NAV
-   ===================== */
 .menu-principal {
     border-bottom: none;
 }
@@ -79,9 +85,20 @@ body {
     max-height: 40px;
 }
 
-/* =====================
-   FOOTER
-   ===================== */
+
+/*=====  End of header  ======*/
+
+
+
+
+/*=============================================
+=            footer            =
+=============================================*/
+
 .footer-principal img {
     width: 25px;
 }
+
+
+/*=====  End of footer  ======*/
+
