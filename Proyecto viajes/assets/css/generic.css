@@ -1,32 +1,87 @@
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  line-height: 1.7;
-  background-color: rgb(92, 9, 26);
-  color: white;
-  align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.7;
 }
-.header{
-    display: flex;
-    background-color: rgb(66, 16, 16);
-    padding: 2vh;
-    align-items: center;
-    justify-content: center;
-}
-.header ul{
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    justify-content: space-evenly;
+/* =====================    Variables    ===================== */
+:root {
+    --color-fondo: rgb(92, 9, 26);
+    --color-barra: rgb(66, 16, 16);
+    --color-activo: rgb(92, 9, 26);
+    --color-texto: #ffffff;
+    --color-hover: #f8d7da;
+    --color-borde-activo: #ffd700;
 }
 
-.header ul li {
-    margin:30px;
+/* =====================    BODY    ===================== */
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
 }
-.header ul li a{
-    text-decoration: none;
-    color: white;
+
+/* =====================
+   HEADER + FOOTER
+   ===================== */
+.header,
+.footer-principal {
+    width: 100%;
+    background-color: var(--color-barra);
+    padding: 1.5rem 2rem;
+}
+
+
+
+/* =====================
+   MAIN
+   ===================== */
+
+.carousel-item img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+}
+
+
+
+/* =====================
+   NAV
+   ===================== */
+.menu-principal {
+    border-bottom: none;
+}
+
+.menu-principal .nav-link {
+    color: var(--color-texto);
+    margin-left: 1rem;
+}
+
+.menu-principal .nav-link:hover,
+.footer-principal a:hover {
+    color: var(--color-hover);
+}
+
+/* Activo */
+.menu-principal .nav-link.active {
+    background-color: var(--color-activo);
+    border: 2px solid var(--color-borde-activo);
+    color: var(--color-texto);
+}
+
+/* Logo */
+.menu-principal .navbar-brand {
+    padding: 0;
+}
+
+.menu-principal .navbar-brand img {
+    max-height: 40px;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+.footer-principal img {
+    width: 25px;
 }

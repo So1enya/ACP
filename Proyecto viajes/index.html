@@ -14,20 +14,94 @@
         <!-- immplementacion del favicon -->
         <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-16x16.png">
     </head>
-<body>
-    <header>
-        <nav class="header">
-            <ul>
-                <li><a href="./index.html"><img src="./assets/img/favicon.png" alt="logo"></a></li>
-                <li><a href="#">Viajes</a></li>
-                <li><a href="#">Postales</a></li>
-                <li><a href="#">Naturaleza</a></li>
-                <li><a href="#">Contacto</a></li>
+<body class="d-flex flex-column min-vh-100">
+    <header class="container-fluid mt-3 header">
+        <nav class="nav nav-tabs align-items-center menu-principal">
 
-            </ul>
+            <!-- Logo -->
+            <a class="navbar-brand nav-link active me-auto" href="index.html" aria-current="page">
+                <img src="./assets/img/favicon.png" alt="Logo" width="40">
+            </a>
+
+            <!-- Menú -->
+            <a class="nav-link" href="lateral.html">Viajes</a>
+            <a class="nav-link" href="periodico.html">Postales</a>
+            <a class="nav-link" href="triple.html">Naturaleza</a>
+            <a class="nav-link" href="contacto.html">Contacto</a>
         </nav>
     </header>
-    <main>
+
+    <main class="flex-grow-1 container mt-4">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <!-- iconos -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- imagenes -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="./assets/img/lugares/yukon1.jpg" class="d-block w-100" alt="Yukon">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Yukon</h5>
+                    <p>Yukon, Canadá</p>
+                </div>
+                </div>
+
+                <div class="carousel-item">
+                <img src="./assets/img/lugares/yellowstone1.jpg" class="d-block w-100" alt="Yellowstone">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Yellowstone</h5>
+                    <p>Yellowstone, Estados Unidos</p>
+                </div>
+                </div>
+
+                <div class="carousel-item">
+                <img src="./assets/img/lugares/siberia1.jpg" class="d-block w-100" alt="Yukon paisaje">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Siberia</h5>
+                    <p>Siberia,Rusia</p>
+                </div>
+                </div>
+            </div>
+
+            <!-- Controles -->
+             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+
+
+        <!-- Tarjetas -->
+
+        <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="./assets/img/lugares/yukon2.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Provincia de Yukón</h5>
+                <p class="card-text">fecha del viaje</p>
+                <a href="#" class="btn btn-primary">El botón que no recuerdo para que era</a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="./assets/img/lugares/yellowstone2.jpg" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Parque Yellowstone</h5>
+                <p class="card-text">fecha del viaje</p>
+                <a href="#" class="btn btn-primary">El botón que no recuerdo para que era</a>
+            </div>
+        </div>
+
+
+
+
 
 
 
@@ -35,47 +109,32 @@
         <p>Sitios para ir en Yukon, Canada <a href="https://travel.destinationcanada.com/en-gb/things-to-do/top-10-attractions-yukon">enlace a la pagina</a></p>
         <p><a href="https://animalia.bio/es/yukon-region?page=%3F">animales de yukon</a></p>
     </main>
-    <footer>
-        <p class="derechos">
-            <small>© Copyright 2026. Todos los derechos reservados. </small>
+
+
+    <footer class="container-fluid footer-principal mt-5">
+        <div class="row align-items-center">
+
+            <!-- Derechos -->
+            <div class="col-md-6 text-center text-md-start">
+                <small>© Copyright 2026.</small>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="col-md-6 d-flex justify-content-center justify-content-md-end gap-3">
+                <a href="#" target="_blank" class="icono">
+                    <img src="./assets/img/facebook.png" alt="Facebook">
+                </a>
+                <a href="#" target="_blank" class="icono">
+                    <img src="./assets/img/instagram.png" alt="Instagram">
+                </a>
+                <a href="#" target="_blank" class="icono">
+                    <img src="./assets/img/twitter.png" alt="Twitter">
+                </a>
+            </div>
+
         </div>
-        <!-- <ul class="accesibilidad">
-            <li>
-                <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2 Level AA conformance">
-                <img height="32" width="88" src="https://www.w3.org/WAI/WCAG21/wcag2.1AA-v" alt="Level AA conformance,
-                    W3C WAI Web Content Accessibility Guidelines 2.1">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.w3.org/WAI/WCAG2A-Conformance" title="Explanation of WCAG 2 Level A Conformance">
-                <img height="32" width="88" src="https://www.w3.org/WAI/WCAG21/wcag2.1A-v" alt="Level A conformance,
-                    W3C WAI Web Content Accessibility Guidelines 2.1">
-                </a>
-            </li>
-        </ul> -->
-        <ul class="redes">
-            <li>
-                <a href="" target="_blank" class="icono">
-                <img src="./img/facebook.svg">
-                </a>
-            </li>
-            <li>
-                <a href="" target="_blank" class="icono">
-                <img src="./assets/img/instagram.png">
-                </a>
-            </li>
-            <li>
-                <a href="" target="_blank" class="icono">
-                <img src="./assets/img/twitter.png">
-                </a>
-            </li>
-            <li>
-                <a href="" target="_blank" class="icono">
-                <img src="./img/github.svg">
-                </a>
-            </li>
-        </ul>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
