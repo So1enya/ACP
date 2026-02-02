@@ -5,18 +5,33 @@
     border-radius: 10px;
 }
 
-
 .tarjetas{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 2rem;
 }
-.card{
+.card {
     width: 20rem;
+    margin-bottom: 2rem;
 }
+
 .card img{
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255,0.1);
+    color: black;
+    border-radius: 10px;
+    border-color: #1a2421;
+}
+
+.card-body .btn {
+    margin-top: auto;
+    border-radius: 10px;
 }

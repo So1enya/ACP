@@ -14,9 +14,9 @@
 :root {
     --color-fondo: #3f704d;
     --color-barra: #1a2421;
-    --color-activo: rgb(92, 9, 26);
+    --color-activo: black;
     --color-texto: #ffffff;
-    --color-hover: #f8d7da;
+    --color-hover: #51ff82;
     --color-borde-activo: #ffd700;
 }
 
@@ -97,6 +97,12 @@ body {
 
 .footer-principal img {
     width: 25px;
+}
+.footer-principal {
+    width: 100%;
+    background-color: var(--color-barra);
+    padding: 1.5rem 2rem;
+    margin-top: auto;
 }
 
 
