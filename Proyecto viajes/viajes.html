@@ -5,129 +5,417 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Proyecto viajes</title>
         <!-- inclusion del bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         
         <!-- inclusion del css y del js -->
         <link rel="stylesheet" href="./assets/css/generic.css">
         <link rel="stylesheet" href="./assets/css/viajes.css">
-        <script src="./assets/js/master.js" defer></script>
+        <script src="./assets/js/viajes.js" defer></script>
         
         <!-- immplementacion del favicon -->
         <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-16x16.png">
     </head>
-<body class="d-flex flex-column min-vh-100">
-    <header class="container-fluid mt-3 header">
-        <nav class="nav nav-tabs align-items-center menu-principal">
+    <body class="d-flex flex-column min-vh-100">
+        <header class="container-fluid header">
+            <nav class="nav nav-tabs align-items-center menu-principal">
 
-            <!-- Logo -->
-            <a class="navbar-brand nav-link me-auto" href="index.html" aria-current="page">
-                <img src="./assets/img/favicon.png" alt="Logo" width="40">
-            </a>
-
-            <!-- Menú -->
-            <a class="nav-link active" href="viajes.html">Viajes</a>
-            <a class="nav-link" href="postales.html">Postales</a>
-            <a class="nav-link" href="naturaleza.html">Naturaleza</a>
-            <a class="nav-link" href="contacto.html">Contacto</a>
-        </nav>
-    </header>
-    <main>
-        <div class="tarjeta">
-            <div class="tarjeta-img">
-                <img src="./assets/img/lugares/yukon2.jpg" alt="Lugar">
-            </div>
-        
-            <div class="tarjeta-contenido">
-                <div class="tarjeta-top">
-                    <h3>Provincia de Yukón</h3>
-                    <p>Un viaje inolvidable entre paisajes helados y naturaleza salvaje.</p>
-                </div>
-        
-                <div class="tarjeta-bottom">
-                    <span class="fecha">12 / 08 / 2025</span>
-                    <a href="#" class="btn">Ir al viaje</a>
-                </div>
-            </div>
-        </div>
-        <div class="tarjeta">
-            <div class="tarjeta-img">
-                <img src="./assets/img/lugares/siberia2.jpg" alt="Lugar">
-            </div>
-        
-            <div class="tarjeta-contenido">
-                <div class="tarjeta-top">
-                    <h3>Provincia de Yukón</h3>
-                    <p>Un viaje inolvidable entre paisajes helados y naturaleza salvaje.</p>
-                </div>
-        
-                <div class="tarjeta-bottom">
-                    <span class="fecha">12 / 08 / 2025</span>
-                    <a href="#" class="btn">Ir al viaje</a>
-                </div>
-            </div>
-        </div>
-        <div class="tarjeta">
-            <div class="tarjeta-img">
-                <img src="./assets/img/lugares/yukon2.jpg" alt="Lugar">
-            </div>
-        
-            <div class="tarjeta-contenido">
-                <div class="tarjeta-top">
-                    <h3>Provincia de Yukón</h3>
-                    <p>Un viaje inolvidable entre paisajes helados y naturaleza salvaje.</p>
-                </div>
-        
-                <div class="tarjeta-bottom">
-                    <span class="fecha">12 / 08 / 2025</span>
-                    <a href="#" class="btn">Ir al viaje</a>
-                </div>
-            </div>
-        </div>
-        <div class="tarjeta">
-            <div class="tarjeta-img">
-                <img src="./assets/img/lugares/yukon2.jpg" alt="Lugar">
-            </div>
-        
-            <div class="tarjeta-contenido">
-                <div class="tarjeta-top">
-                    <h3>Provincia de Yukón</h3>
-                    <p>Un viaje inolvidable entre paisajes helados y naturaleza salvaje.</p>
-                </div>
-        
-                <div class="tarjeta-bottom">
-                    <span class="fecha">12 / 08 / 2025</span>
-                    <a href="#" class="btn">Ir al viaje</a>
-                </div>
-            </div>
-        </div>
-        
-    </main>
-
-    <footer class="container-fluid footer-principal mt-5">
-        <div class="row align-items-center">
-
-            <!-- Derechos -->
-            <div class="col-md-6 text-center text-md-start">
-                <small>© Copyright 2026.</small>
-            </div>
-
-            <!-- Redes sociales -->
-            <div class="col-md-6 d-flex justify-content-center justify-content-md-end gap-3">
-                <a href="#" target="_blank" class="icono">
-                    <img src="./assets/img/iconos/facebook.png" alt="Facebook">
+                <!-- Logo -->
+                <a class="navbar-brand nav-link me-auto" href="index.html" aria-current="page">
+                    <img src="./assets/img/iconos/logo.png" alt="Logo" width="40">
                 </a>
-                <a href="#" target="_blank" class="icono">
-                    <img src="./assets/img//iconos/instagram.png" alt="Instagram">
-                </a>
-                <a href="#" target="_blank" class="icono">
-                    <img src="./assets/img/iconos/twitter.png" alt="Twitter">
-                </a>
+
+                <!-- Menú -->
+                <a class="nav-link active" href="viajes.html">Viajes</a>
+                <a class="nav-link" href="postales.html">Postales</a>
+                <a class="nav-link" href="naturaleza.html">Naturaleza</a>
+                <a class="nav-link" href="contacto.html">Contacto</a>
+            </nav>
+        </header>
+        <main id="contenedor-tarjetas">
+            <div class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="./assets/img/lugares/yukon2.jpg" alt="Yukón">
+                </div>
+
+                <div class="tarjeta-contenido">
+                    <div class="tarjeta-top">
+                        <h3>Provincia de Yukón</h3>
+                        <p>Yellowstone es el primer parque nacional del mundo, ubicado principalmente en Wyoming, y es famoso por estar sobre un supervolcán que alimenta géiseres, fuentes termales y paisajes geotérmicos únicos como Old Faithful y las coloridas piscinas minerales; combina praderas, bosques, cañones y lagos de alta montaña con una fauna impresionante.</p>
+                    </div>
+
+                    <div class="tarjeta-bottom">
+                        <span class="fecha">12 / 08 / 2025</span>
+                        <button class="btn btn-toggle">Ver lugares</button>
+                    </div>
+                </div>
+
+                <!-- Desplegable (ahora si funciona,kinda) -->
+                <div class="tarjeta-lugares">
+                    <div class="lugar">
+                        <div class="lugar-header">
+                            <img src="./assets/img/iconos/parque.png" class="icono">
+                            <h5>Parque Nacional Kluane</h5>
+                            <span class="fecha">18 / 08 / 2025</span>
+                        </div>
+
+                        <div class="lugar-imagenes">
+                            <img src="./assets/img/lugares/kluane1.jpg">
+                            <img src="./assets/img/lugares/kluane2.jpg">
+                        </div>
+
+                        <div class="lugar-descripcion">
+                            Montañas gigantes, glaciares inmensos y uno de los paisajes más espectaculares del Yukón. Ideal para trekking y observación de fauna.
+                        </div>
+
+                        <div class="lugar-footer">
+                            <div class="estrellas">★★★★☆</div>
+                            <div class="ubicacion">Yukón, Canadá</div>
+                        </div>
+                    </div>
+
+                    <div class="lugar">
+                        <div class="lugar-header">
+                            <img src="./assets/img/iconos/lago.png" class="icono">
+                            <h5>Río Yukon</h5>
+                            <span class="fecha">19 / 08 / 2025</span>
+                        </div>
+
+                        <div class="lugar-imagenes">
+                            <img src="./assets/img/lugares/rioyukon1.jpg">
+                            <img src="./assets/img/lugares/rioyukon2.jpg">
+                        </div>
+
+                        <div class="lugar-descripcion">
+                            Navegar por el río Yukon ofrece vistas únicas de bosques boreales, auroras boreales y vida salvaje. Un viaje clásico del norte canadiense.
+                        </div>
+
+                        <div class="lugar-footer">
+                            <div class="estrellas">★★★☆☆</div>
+                            <div class="ubicacion">Yukón, Canadá</div>
+                        </div>
+                    </div>
+
+                    <div class="lugar">
+                        <div class="lugar-header">
+                            <img src="./assets/img/iconos/montana.png" class="icono">
+                            <h5>Montaña Logan</h5>
+                            <span class="fecha">18 / 08 / 2025</span>
+                        </div>
+
+                        <div class="lugar-imagenes">
+                            <img src="./assets/img/lugares/logan1.jpg">
+                            <img src="./assets/img/lugares/logan2.jpg">
+                        </div>
+
+                        <div class="lugar-descripcion">
+                            La montaña más alta de Canadá (5.959 m). Su entorno glaciar y sus picos imposibles hacen de este lugar un reto para montañeros.
+                        </div>
+
+                        <div class="lugar-footer">
+                            <div class="estrellas">★★★★☆</div>
+                            <div class="ubicacion">Parque Nacional Kluane, Yukón</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-        </div>
-    </footer>
+            <div class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="./assets/img/lugares/patagonia2.jpg" alt="Patagonia">
+                </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+                <div class="tarjeta-contenido">
+                    <div class="tarjeta-top">
+                        <h3>Patagonia</h3>
+                        <p>La Patagonia, en el sur de Argentina y Chile, es una región vasta y poco poblada, conocida por sus paisajes extremos: montañas como el Fitz Roy, grandes glaciares, lagos y estepas azotadas por el viento. Tiene un clima frío y cambiante, una fauna diversa y una identidad cultural marcada por pueblos originarios y la vida austera, lo que la convierte en un lugar de naturaleza imponente y sensación de fin del mundo.</p>
+                    </div>
+
+                    <div class="tarjeta-bottom">
+                        <span class="fecha">15 / 09 / 2025</span>
+                        <button class="btn btn-toggle">Ver lugares</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-lugares">
+                    <div class="lugar">
+                        <div class="lugar-header">
+                            <img src="./assets/img/iconos/glaciar.png" class="icono">
+                            <h5>Glaciar Perito Moreno</h5>
+                            <span class="fecha">16 / 09 / 2025</span>
+                        </div>
+
+                        <div class="lugar-imagenes">
+                            <img src="./assets/img/lugares/perito1.jpg">
+                            <img src="./assets/img/lugares/perito2.jpg">
+                        </div>
+
+                        <div class="lugar-descripcion">
+                            Uno de los glaciares más impresionantes y activos del mundo.
+                        </div>
+
+                        <div class="lugar-footer">
+                            <div class="estrellas">★★★★★</div>
+                            <div class="ubicacion">Patagonia, Argentina</div>
+                        </div>
+                    </div>
+
+                    <div class="lugar">
+                        <div class="lugar-header">
+                            <img src="./assets/img/iconos/glaciar.png" class="icono">
+                            <h5>Glaciar Grey</h5>
+                            <span class="fecha">22 / 08 / 2025</span>
+                        </div>
+
+                        <div class="lugar-imagenes">
+                            <img src="./assets/img/lugares/grey1.jpg">
+                            <img src="./assets/img/lugares/grey2.jpg">
+                        </div>
+
+                        <div class="lugar-descripcion">
+                            Un glaciar inmenso en el Parque Torres del Paine, con un lago azul intenso lleno de icebergs. Una vista espectacular desde el mirador.
+                        </div>
+
+                        <div class="lugar-footer">
+                            <div class="estrellas">★★★★★</div>
+                            <div class="ubicacion">Torres del Paine, Chile</div>
+                        </div>
+                    </div>
+
+                    <div class="lugar">
+                        <div class="lugar-header">
+                            <img src="./assets/img/iconos/estepa.png" class="icono">
+                            <h5>Estepa patagónica</h5>
+                            <span class="fecha">23 / 08 / 2025</span>
+                        </div>
+
+                        <div class="lugar-imagenes">
+                            <img src="./assets/img/lugares/estepa1.jpg">
+                            <img src="./assets/img/lugares/estepa2.jpg">
+                        </div>
+
+                        <div class="lugar-descripcion">
+                            Un paisaje vasto, seco y ventoso, con colores ocres y cielos infinitos. Ideal para rutas en 4x4 y observación de fauna como guanacos.
+                        </div>
+
+                        <div class="lugar-footer">
+                            <div class="estrellas">★★★☆☆</div>
+                            <div class="ubicacion">Patagonia, Argentina</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="./assets/img/lugares/yellowstone2.jpg" alt="Yellowstone">
+                </div>
+
+                <div class="tarjeta-contenido">
+                    <div class="tarjeta-top">
+                        <h3>Parque Yellowstone</h3>
+                        <p>Yellowstone es el primer parque nacional del mundo, ubicado principalmente en Wyoming, y es famoso por estar sobre un supervolcán que alimenta géiseres, fuentes termales y paisajes geotérmicos únicos como Old Faithful y las coloridas piscinas minerales; combina praderas, bosques, cañones y lagos de alta montaña con una fauna impresionante.</p>
+                    </div>
+
+                    <div class="tarjeta-bottom">
+                        <span class="fecha">01 / 09 / 2025</span>
+                        <button class="btn btn-toggle">Ver lugares</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-lugares">
+                    <div class="lugar">
+                        <div class="lugar-header">
+                            <img src="./assets/img/iconos/geotermia.png" class="icono">
+                            <h5>Old Faithful</h5>
+                            <span class="fecha">02 / 09 / 2025</span>
+                        </div>
+
+                        <div class="lugar-imagenes">
+                            <img src="./assets/img/lugares/old1.jpg">
+                            <img src="./assets/img/lugares/old2.jpg">
+                        </div>
+
+                        <div class="lugar-descripcion">
+                            Géiser activo con erupciones regulares, símbolo del parque.
+                        </div>
+
+                        <div class="lugar-footer">
+                            <div class="estrellas">★★★★★</div>
+                            <div class="ubicacion">Wyoming, EE.UU.</div>
+                        </div>
+                    </div>
+
+                    <div class="lugar">
+                        <div class="lugar-header">
+                            <img src="./assets/img/iconos/lago.png" class="icono">
+                            <h5>Yellowstone Lake</h5>
+                            <span class="fecha">14 / 08 / 2025</span>
+                        </div>
+
+                        <div class="lugar-imagenes">
+                            <img src="./assets/img/lugares/yellowstonelake1.jpg">
+                            <img src="./assets/img/lugares/yellowstonelake2.jpg">
+                        </div>
+
+                        <div class="lugar-descripcion">
+                            El lago más grande del parque, situado a gran altitud. Ideal para paseos en kayak, senderismo y observar aves acuáticas.
+                        </div>
+
+                        <div class="lugar-footer">
+                            <div class="estrellas">★★★★☆</div>
+                            <div class="ubicacion">Yellowstone, EEUU</div>
+                        </div>
+                    </div>
+
+                    <div class="lugar">
+                        <div class="lugar-header">
+                            <img src="./assets/img/iconos/lago.png" class="icono">
+                            <h5>Cascada Lower Falls</h5>
+                            <span class="fecha">15 / 08 / 2025</span>
+                        </div>
+
+                        <div class="lugar-imagenes">
+                            <img src="./assets/img/lugares/lowerfalls1.jpg">
+                            <img src="./assets/img/lugares/lowerfalls2.jpg">
+                        </div>
+
+                        <div class="lugar-descripcion">
+                            Una de las cascadas más impresionantes de Estados Unidos. Se puede ver desde varios miradores y ofrece vistas espectaculares del cañón.
+                        </div>
+
+                        <div class="lugar-footer">
+                            <div class="estrellas">★★★★☆</div>
+                            <div class="ubicacion">Yellowstone, EEUU</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tarjeta">
+                <div class="tarjeta-img">
+                    <img src="./assets/img/lugares/siberia2.jpg" alt="Siberia">
+                </div>
+
+                <div class="tarjeta-contenido">
+                    <div class="tarjeta-top">
+                        <h3>Siberia</h3>
+                        <p>Siberia ocupa casi todo el norte de Rusia, desde los montes Urales hasta el océano Pacífico. Es más grande que Canadá, pero con una densidad de población bajísima. Aun así, allí viven millones de personas, sobre todo en ciudades del sur.</p>
+                    </div>
+
+                    <div class="tarjeta-bottom">
+                        <span class="fecha">20 / 08 / 2025</span>
+                        <button class="btn btn-toggle">Ver lugares</button>
+                    </div>
+                </div>
+
+                <div class="tarjeta-lugares">
+                    <div class="lugar">
+                        <div class="lugar-header">
+                            <img src="./assets/img/iconos/lago.png" class="icono">
+                            <h5>Lago Baikal</h5>
+                            <span class="fecha">21 / 08 / 2025</span>
+                        </div>
+
+                        <div class="lugar-imagenes">
+                            <img src="./assets/img/lugares/baikal1.jpg">
+                            <img src="./assets/img/lugares/baikal2.jpg">
+                        </div>
+
+                        <div class="lugar-descripcion">
+                            El lago más profundo del mundo, con aguas cristalinas y fauna única.
+                        </div>
+
+                        <div class="lugar-footer">
+                            <div class="estrellas">★★★★☆</div>
+                            <div class="ubicacion">Siberia, Rusia</div>
+                        </div>
+                    </div>
+
+                    <div class="lugar">
+                        <div class="lugar-header">
+                            <img src="./assets/img/iconos/montana.png" class="icono">
+                            <h5>Montes Altái</h5>
+                            <span class="fecha">23 / 08 / 2025</span>
+                        </div>
+
+                        <div class="lugar-imagenes">
+                            <img src="./assets/img/lugares/altai1.jpg">
+                            <img src="./assets/img/lugares/altai2.jpg">
+                        </div>
+
+                        <div class="lugar-descripcion">
+                            Región montañosa remota con glaciares, lagos alpinos y una fuerte presencia de culturas nómadas tradicionales.
+                        </div>
+
+                        <div class="lugar-footer">
+                            <div class="estrellas">★★★★★</div>
+                            <div class="ubicacion">República de Altái, Rusia</div>
+                        </div>
+                    </div>
+
+                    <div class="lugar">
+                        <div class="lugar-header">
+                            <img src="./assets/img/iconos/ciudad.png" class="icono">
+                            <i class="bi bi-snow icono-lugar"></i>
+                            <h5>Yakutsk</h5>
+                            <span class="fecha">25 / 08 / 2025</span>
+                        </div>
+
+                        <div class="lugar-imagenes">
+                            <img src="./assets/img/lugares/yakutsk1.jpg">
+                            <img src="./assets/img/lugares/yakutsk2.jpg">
+                        </div>
+
+                        <div class="lugar-descripcion">
+                            Considerada la ciudad más fría del mundo, construida sobre permafrost y con una cultura adaptada a temperaturas extremas.
+                        </div>
+
+                        <div class="lugar-footer">
+                            <div class="estrellas">★★★☆☆</div>
+                            <div class="ubicacion">Yakutia, Rusia</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            
+        </main>
+
+        <div class="paginacion">
+            <button onclick="cambiarPagina(1)">1</button>
+            <button onclick="cambiarPagina(2)">2</button>
+        </div>
+
+
+        <footer class="container-fluid footer-principal mt-5">
+            <div class="row align-items-center">
+
+                <div class="col-md-4 text-center text-md-start">
+                    <small>Página creada por Rodrigo García Contreras</small>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <a href="licencias.html" class="text-decoration-none" style="color: #fff;">
+                        Licencias
+                    </a>
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-center justify-content-md-end gap-3">
+                    <a href="#" target="_blank" class="icono"><img src="./assets/img/iconos/facebook.png" alt="Facebook"></a>
+                    <a href="#" target="_blank" class="icono"><img src="./assets/img/iconos/instagram.png" alt="Instagram"></a>
+                    <a href="#" target="_blank" class="icono"><img src="./assets/img/iconos/twitter.png" alt="Twitter"></a>
+                </div>
+
+            </div>
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
 

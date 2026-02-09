@@ -4,117 +4,667 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Proyecto viajes</title>
+
         <!-- inclusion del bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"></head>
-        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
         <!-- inclusion del css y del js -->
         <link rel="stylesheet" href="./assets/css/generic.css">
-        <link rel="stylesheet" href="./assets/css/principal.css">
+        <link rel="stylesheet" href="./assets/css/naturaleza.css">
         <script src="./assets/js/master.js" defer></script>
         
         <!-- immplementacion del favicon -->
         <link rel="icon" type="image/png" href="./assets/img/favicon/favicon-16x16.png">
     </head>
+
 <body class="d-flex flex-column min-vh-100">
-    <header class="container-fluid mt-3 header">
+    <header class="container-fluid header">
         <nav class="nav nav-tabs align-items-center menu-principal">
 
             <!-- Logo -->
-            <a class="navbar-brand nav-link active me-auto" href="index.html" aria-current="page">
-                <img src="./assets/img/favicon.png" alt="Logo" width="40">
-            </a>
+            <a class="navbar-brand nav-link me-auto" href="index.html" aria-current="page">
+                    <img src="./assets/img/iconos/logo.png" alt="Logo" width="40">
+                </a>
 
             <!-- Menú -->
             <a class="nav-link" href="viajes.html">Viajes</a>
             <a class="nav-link" href="postales.html">Postales</a>
-            <a class="nav-link" href="naturaleza.html">Naturaleza</a>
+            <a class="nav-link active" href="naturaleza.html">Naturaleza</a>
             <a class="nav-link" href="contacto.html">Contacto</a>
         </nav>
     </header>
 
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
     <main class="flex-grow-1 container mt-4">
 
-        
+        <section class="mb-5">
+            <h2 class="mb-4">Paleta de colores / Referencias</h2>
 
-
-
-        <!-- Tarjetas -->
-
-        <div class="tarjetas">
-            <div class="card">
-                <img class="card-img-top" src="./assets/img/lugares/yukon2.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Provincia de Yukón</h5>
-                    <p class="card-text">fecha del viaje</p>
-                    <a href="#" class="btn btn-primary">El botón que no recuerdo para que era</a>
-                </div>
+            <div class="lista-colores p-4 rounded-3">
+                <ul class="color-list">
+                    <li class="color-item color-1">Animal terrestre</li>
+                    <li class="color-item color-2">Animal endémico</li>
+                    <li class="color-item color-3">Ave</li>
+                    <li class="color-item color-4">Pez</li>
+                    <li class="color-item color-5">Árbol</li>
+                </ul>
             </div>
+        </section>
 
-            <div class="card">
-                <img class="card-img-top" src="./assets/img/lugares/yellowstone2.jpg" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Parque Yellowstone</h5>
-                    <p class="card-text">fecha del viaje</p>
-                    <a href="#" class="btn btn-primary">El botón que no recuerdo para que era</a>
+        <!-- ===== Siberia ===== -->
+        <section class="mb-5">
+            <h2 class="mb-4">Fauna de Siberia</h2>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Oveja de las nieves siberiana</h6>
+                            </div>
+                            <div>
+                                <i class="bi bi-star fs-4"></i>
+                            </div>
+                        </div>
+                        <div class="linea-tipo endemico"></div>
+
+                        <div class="imagen">
+                            <img src="./assets/img/animales/siberia/ovejanieves.jpg" alt="Oveja de las nieves siberiana">
+                        </div>
+                    </div>
                 </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Zorro Ártico</h6>
+                            </div>
+                            <div>
+                               <img src="./assets/img/iconos/patas.png" alt="Icono ave" class="icono-animal">
+                            </div>
+                        </div>
+                        <div class="linea-tipo tierra"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/siberia/zorroartico.jpg" alt="Zorro Ártico">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Leopardo del Amur</h6>
+                            </div>
+                            <div>
+                                <i class="bi bi-star fs-4"></i>
+                            </div>
+                        </div>
+                        <div class="linea-tipo endemico"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/siberia/leopardoamur.jpg" alt="Leopardo del Amur">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Búho Real</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/aguila.png" alt="Icono ave" class="icono-animal">
+                            </div>
+                        </div>
+                        <div class="linea-tipo ave"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/siberia/buhoreal.jpg" alt="Búho Real">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Pino siberiano (Pinus sibirica)</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/arbol.png" alt="Icono ave" class="icono-animal icono-arbol">
+                            </div>
+                        </div>
+                        <div class="linea-tipo arbol"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/siberia/pino_siberiano.jpg" alt="Pino siberiano">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Abedul (Betula pendula)</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/arbol.png" alt="Icono ave" class="icono-animal icono-arbol">
+                            </div>
+                        </div>
+                        <div class="linea-tipo arbol"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/siberia/abedul.jpg" alt="Abedul">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Sauce (Salix spp.)</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/arbol.png" alt="Icono ave" class="icono-animal icono-arbol">
+                            </div>
+                        </div>
+                        <div class="linea-tipo arbol"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/siberia/sauce.jpg" alt="Sauce">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Sauce enano (Salix herbacea)</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/arbol.png" alt="Icono ave" class="icono-animal icono-arbol">
+                            </div>
+                        </div>
+                        <div class="linea-tipo arbol"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/siberia/sauce_enano.jpg" alt="Sauce enano">
+                        </div>
+                    </div>
+</div>
+
+
             </div>
-        </div>
+        </section>
+
+        <!-- ===== Yellowstone ===== -->
+        <section class="mb-5">
+            <h2 class="mb-4">Fauna de Yellowstone</h2>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Bisonte americano</h6>
+                            </div>
+                            <div>
+                               <img src="./assets/img/iconos/patas.png" alt="Icono ave" class="icono-animal">
+                            </div>
+                        </div>
+                        <div class="linea-tipo tierra"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/yellowstone/bisonte.jpeg" alt="Bisonte americano">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Trucha degollada de Yellowstone</h6>
+                            </div>
+                            <div><i class="bi bi-star fs-4"></i></div>
+                        </div>
+                        <div class="linea-tipo endemico"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/yellowstone/trucha.jpg" alt="Trucha degollada">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Alce Wapití</h6>
+                            </div>
+                            <div>
+                               <img src="./assets/img/iconos/patas.png" alt="Icono ave" class="icono-animal">
+                            </div>
+                        </div>
+                        <div class="linea-tipo tierra"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/yellowstone/alcewapiti.jpg" alt="Alce Wapití">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Águila calva</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/aguila.png" alt="Icono ave" class="icono-animal">
+
+                            </div>
+                        </div>
+                        <div class="linea-tipo ave"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/yellowstone/aguila.jpg" alt="Águila calva">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Pino lodgepole (Pinus contorta)</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/arbol.png" alt="Icono árbol" class="icono-animal icono-arbol">
+                            </div>
+                        </div>
+                        <div class="linea-tipo arbol"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/yellowstone/pino_lodgepole.jpg" alt="Pino lodgepole">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Abeto (Abies lasiocarpa)</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/arbol.png" alt="Icono árbol" class="icono-animal icono-arbol">
+                            </div>
+                        </div>
+                        <div class="linea-tipo arbol"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/yellowstone/abeto.jpg" alt="Abeto">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Sauce (Salix spp.)</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/arbol.png" alt="Icono árbol" class="icono-animal icono-arbol">
+                            </div>
+                        </div>
+                        <div class="linea-tipo arbol"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/siberia/sauce.jpg" alt="Sauce">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Brezal (Arctostaphylos uva-ursi)</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/arbol.png" alt="Icono árbol" class="icono-animal icono-arbol">
+                            </div>
+                        </div>
+                        <div class="linea-tipo arbol"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/yellowstone/brezal.jpg" alt="Brezal">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- ===== Yukon ===== -->
+        <section class="mb-5">
+            <h2 class="mb-4">Fauna de Yukón</h2>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Alce gigante de Yukón</h6>
+                            </div>
+                            <div><i class="bi bi-star fs-4"></i></div>
+                        </div>
+                        <div class="linea-tipo endemico"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/yukon/alcegiga.jpg" alt="Alce gigante de Yukón">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Oso Polar</h6>
+                            </div>
+                            <div>
+                               <img src="./assets/img/iconos/patas.png" alt="Icono ave" class="icono-animal">
+                            </div>
+                        </div>
+                        <div class="linea-tipo tierra"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/yukon/osopolar.jpg" alt="Oso Polar">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Lobo de Yukón</h6>
+                            </div>
+                            <div><i class="bi bi-star fs-4"></i></div>
+                        </div>
+                        <div class="linea-tipo endemico"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/yukon/loboyukon.jpg" alt="Lobo de Yukón">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Salmón Chinook</h6>
+                            </div>
+                            <div><i class="bi bi-star fs-4"></i></div>
+                        </div>
+                        <div class="linea-tipo endemico"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/yukon/salmonchinook.jpg" alt="Salmón Chinook">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Abedul blanco (Betula papyrifera)</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/arbol.png" alt="Icono árbol" class="icono-animal icono-arbol">
+                            </div>
+                        </div>
+                        <div class="linea-tipo arbol"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/yukon/abedul_blanco.jpg" alt="Abedul blanco">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Álamo (Populus balsamifera)</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/arbol.png" alt="Icono árbol" class="icono-animal icono-arbol">
+                            </div>
+                        </div>
+                        <div class="linea-tipo arbol"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/yukon/alamo.jpg" alt="Álamo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Pino negro (Pinus contorta)</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/arbol.png" alt="Icono árbol" class="icono-animal icono-arbol">
+                            </div>
+                        </div>
+                        <div class="linea-tipo arbol"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/yukon/pino_negro.jpg" alt="Pino negro">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Arándano (Vaccinium spp.)</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/arbol.png" alt="Icono árbol" class="icono-animal icono-arbol">
+                            </div>
+                        </div>
+                        <div class="linea-tipo arbol"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/yukon/arandano.jpg" alt="Arándano">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- ===== Patagonia ===== -->
+        <section class="mb-5">
+            <h2 class="mb-4">Fauna de la Patagonia</h2>
+
+            <div class="row g-4 justify-content-center">
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Guanaco</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/patas.png" alt="Icono ave" class="icono-animal">
+                            </div>
+                        </div>
+                        <div class="linea-tipo tierra"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/patagonia/guanaco.jpg" alt="Guanaco">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Cóndor andino</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/aguila.png" alt="Icono ave" class="icono-animal">
+
+                            </div>
+                        </div>
+                        <div class="linea-tipo ave"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/patagonia/condor.jpg" alt="Cóndor andino">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Puma</h6>
+                            </div>
+                            <div>
+                                                                <img src="./assets/img/iconos/patas.png" alt="Icono ave" class="icono-animal">
+
+                            </div>
+                        </div>
+                        <div class="linea-tipo tierra"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/patagonia/puma.jpg" alt="Puma patagónico">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Huémul</h6>
+                            </div>
+                            <div>
+                                <i class="bi bi-star fs-4"></i>
+                            </div>
+                        </div>
+                        <div class="linea-tipo endemico"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/patagonia/huemul.jpg" alt="Huémul">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Lenga (Nothofagus pumilio)</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/arbol.png" alt="Icono árbol" class="icono-animal icono-arbol">
+                            </div>
+                        </div>
+                        <div class="linea-tipo arbol"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/patagonia/lenga.jpg" alt="Lenga">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Ñire (Nothofagus antarctica)</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/arbol.png" alt="Icono árbol" class="icono-animal icono-arbol">
+                            </div>
+                        </div>
+                        <div class="linea-tipo arbol"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/patagonia/nire.jpg" alt="Ñire">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Notro (Embothrium coccineum)</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/arbol.png" alt="Icono árbol" class="icono-animal icono-arbol">
+                            </div>
+                        </div>
+                        <div class="linea-tipo arbol"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/patagonia/notro.jpg" alt="Notro">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card tarjeta">
+                        <div class="card-header-custom d-flex align-items-center px-3">
+                            <div class="flex-grow-1">
+                                <h6 class="mb-0">Calafate (Berberis microphylla)</h6>
+                            </div>
+                            <div>
+                                <img src="./assets/img/iconos/arbol.png" alt="Icono árbol" class="icono-animal icono-arbol">
+                            </div>
+                        </div>
+                        <div class="linea-tipo arbol"></div>
+                        <div class="imagen">
+                            <img src="./assets/img/animales/patagonia/calafate.jpg" alt="Notro">
+                        </div>
+                    </div>
+                </div>
 
 
 
+                
 
 
+            </div>
+        </section>
 
-        <h2>Yukon</h2>
-        <p>Sitios para ir en Yukon, Canada <a href="https://travel.destinationcanada.com/en-gb/things-to-do/top-10-attractions-yukon">enlace a la pagina</a></p>
-        <p><a href="https://animalia.bio/es/yukon-region?page=%3F">animales de yukon</a></p>
-        <p><a href="https://www.yukonoutfittersassociation.com/yukon-wildlife">animales de yukon</a></p>
-        
-        <h2>Yellowstone</h2>
-        <p>Sitios para ir en Yukon, Canada <a href="https://travel.destinationcanada.com/en-gb/things-to-do/top-10-attractions-yukon">enlace a la pagina</a></p>
-        <p><a href="https://www.nps.gov/yell/learn/nature/wildlife.htm">animales de Yellowstone</a></p>
-        <p><a href="https://www.yukonoutfittersassociation.com/yukon-wildlife">animales de Yellowstone</a></p>
-        
     </main>
 
-
     <footer class="container-fluid footer-principal mt-5">
-        <div class="row align-items-center">
+    <div class="row align-items-center">
 
-            <!-- Derechos -->
-            <div class="col-md-6 text-center text-md-start">
-                <small>© Copyright 2026.</small>
-            </div>
-
-            <!-- Redes sociales -->
-            <div class="col-md-6 d-flex justify-content-center justify-content-md-end gap-3">
-                <a href="#" target="_blank" class="icono">
-                    <img src="./assets/img/iconos/facebook.png" alt="Facebook">
-                </a>
-                <a href="#" target="_blank" class="icono">
-                    <img src="./assets/img//iconos/instagram.png" alt="Instagram">
-                </a>
-                <a href="#" target="_blank" class="icono">
-                    <img src="./assets/img/iconos/twitter.png" alt="Twitter">
-                </a>
-            </div>
-
+        <div class="col-md-4 text-center text-md-start">
+            <small>Página creada por Rodrigo García Contreras</small>
         </div>
-    </footer>
+
+        <!-- Enlace a licencias -->
+        <div class="col-md-4 text-center">
+            <a href="licencias.html" class="text-decoration-none" style="color: #fff;">
+                Licencias
+            </a>
+        </div>
+
+        <div class="col-md-4 d-flex justify-content-center justify-content-md-end gap-3">
+            <a href="#" target="_blank" class="icono"><img src="./assets/img/iconos/facebook.png" alt="Facebook"></a>
+            <a href="#" target="_blank" class="icono"><img src="./assets/img/iconos/instagram.png" alt="Instagram"></a>
+            <a href="#" target="_blank" class="icono"><img src="./assets/img/iconos/twitter.png" alt="Twitter"></a>
+        </div>
+
+    </div>
+</footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-
-
-
-
-<!-- derechos generales
- 
-iconos, hay que nombrarlos
-<a href="https://www.flaticon.es/iconos-gratis/logotipo-de-instagram" title="logotipo de instagram iconos">Logotipo de instagram iconos creados por Pixel perfect - Flaticon</a>
-
-
-
--->

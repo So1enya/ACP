@@ -23,6 +23,24 @@
 /*=====  End of Variables  ======*/
 
 
+@font-face {
+    font-family: 'Amatic SC';
+    src: url('../fonts/AmaticSC-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amatic SC';
+    src: url('../fonts/AmaticSC-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.menu-principal .nav-link {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.6rem;
+}
 
 
 /*=============================================
@@ -32,6 +50,7 @@
 body {
     background-color: var(--color-fondo);
     color: var(--color-texto);
+    
 }
 
 /*=====  End of body  ======*/
@@ -87,7 +106,6 @@ body {
 
 
 /*=====  End of header  ======*/
-
 
 
 

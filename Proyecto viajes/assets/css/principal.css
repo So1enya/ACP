@@ -1,37 +1,82 @@
-.carousel-item img {
-    width: 100%;
-    height: 800px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
 .tarjetas{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
     padding: 2rem;
 }
-.card {
-    width: 20rem;
-    margin-bottom: 2rem;
+
+.tarjeta-viaje{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.card img{
-    height: 200px;
+.tarjeta-viaje img{
+    width: 100%;
+    height: 260px;
     object-fit: cover;
+    display: block;
     border-radius: 10px;
 }
-.card-body {
+
+.tarjeta-viaje::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(255,255,255,0.75);
+    z-index: 1;
+}
+
+.tarjeta-viaje .card-overlay{
+    position: absolute;
+    inset: 0;
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255,0.1);
-    color: black;
-    border-radius: 10px;
-    border-color: #1a2421;
+    justify-content: flex-end;
+    padding: 1rem;
+    gap: 0.5rem;
+    z-index: 2;
+    background: transparent;
+    color: white;
 }
 
-.card-body .btn {
-    margin-top: auto;
+.tarjeta-viaje:hover .card-overlay{
+    background: rgba(0,0,0,0.5);
+}
+
+.tarjeta-viaje .card-title,
+.tarjeta-viaje .card-text,
+.tarjeta-viaje .btn{
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.tarjeta-viaje:hover .card-title,
+.tarjeta-viaje:hover .card-text,
+.tarjeta-viaje:hover .btn{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tarjeta-viaje .btn{
+    width: fit-content;
     border-radius: 10px;
+}
+/* ------------------ */
+.carousel-inner {
+    height: 800px;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
 }

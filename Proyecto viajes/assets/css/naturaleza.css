@@ -1,0 +1,125 @@
+.tarjeta {
+    height: 400px;
+    width: 18rem;
+    background-color: rgba(0, 0, 0, 0.45);
+    color: white;
+}
+
+.card-header-custom {
+    height: 20%;
+}
+
+.linea-tipo {
+    height: 3px;
+    background-color: #000;
+}
+
+.imagen {
+    height: calc(80% - 3px);
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icono-animal {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
+}
+
+/* Icono árbol (invertir colores) */
+.icono-arbol {
+    filter: invert(1);
+}
+
+
+/*=============================================
+=            Lista para color            =
+=============================================*/
+
+/* amarillo (endémicos) */
+.color-list--amarillo .color-item::before { background: #ffd700; }
+.color-list--amarillo .color-item { color: #ffd700; }
+
+/* azul (aves) */
+.color-list--azul .color-item::before { background: #51bfff; }
+.color-list--azul .color-item { color: #51bfff; }
+
+/* morado (tierra) */
+.color-list--verde .color-item::before { background: #3f704d; }
+.color-list--verde .color-item { color: #3f704d; }
+
+/* rojo (peces) */
+.color-list--rojo .color-item::before { background: #ff4d4d; }
+.color-list--rojo .color-item { color: #ff4d4d; }
+
+/* verde (arboles) */
+.color-list--verde .color-item::before { background: rgb(0, 255, 0); }
+.color-list--verde .color-item {color: rgb(0, 255, 0); }
+
+.lista-colores {
+    background: rgba(0, 0, 0, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.color-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.color-item {
+    margin: 0.7rem 0;
+    padding-left: 2.5rem;
+    position: relative;
+    font-weight: 500;
+}
+
+.color-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.45rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+/* Colores de ejemplo */
+.color-1::before { background: purple; }
+.color-2::before { background: #ffd700; }
+.color-3::before { background: #51bfff; }
+.color-4::before { background: #ff4d4d; }
+.color-5::before { background: rgb(0, 255, 0); }
+
+
+/*=============================================
+=            Línea por categoría            =
+=============================================*/
+
+.linea-tipo.endemico {
+    background-color: #ffd700; /* amarillo */
+}
+
+.linea-tipo.ave {
+    background-color: #51bfff; /* azul */
+}
+
+.linea-tipo.tierra {
+    background-color: purple; /* morao */
+}
+
+.linea-tipo.pez {
+    background-color: #ff4d4d; /* rojo */
+}
+
+.linea-tipo.arbol {
+    background-color: rgb(0, 255, 0); /* verde */
+}
+
+/*=============================================
+=                                              =
+=============================================*/
+

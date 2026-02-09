@@ -1,0 +1,133 @@
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+
+.flip-contenedor {
+    width: 900px;
+    height: 600px;
+    perspective: 1400px;
+    display: flex;
+    justify-content: center;
+}
+
+.flip-card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+}
+
+/* Giro al pasar el ratón */
+.flip-contenedor:hover .flip-card {
+    transform: rotateY(180deg);
+}
+
+/* Caras */
+.flip-cara {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+.flip-cara img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Frente */
+.flip-frente {
+    background: #000;
+}
+
+/* Dorso */
+.flip-dorso {
+    transform: rotateY(180deg);
+    background: whitesmoke;
+    color: black;
+}
+/* Postal dentro del dorso */
+.flip-dorso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* CONTENEDOR POSTAL */
+.postal {
+    width: 100%;
+    height: 100%;
+    background: #eeebe3;
+    display: flex;
+    font-family: "Georgia", serif;
+    box-sizing: border-box;
+    display: flex;
+}
+
+/* MITADES */
+.postal .mitad {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* MITAD IZQUIERDA */
+.postal .izquierda {
+    border-right: 2px solid grey;
+}
+
+.postal .texto-superior {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Firma abajo a la derecha */
+.postal .firma {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/* MITAD DERECHA */
+.postal .derecha {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* SELLO */
+.postal .sello {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 80px;
+    height: 100px;
+    /* border: 2px dashed #444; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    text-align: center;
+    background: #fafafa;
+}
+
+/* TEXTO DERECHO */
+.postal .texto-derecha {
+    margin-top: 140px;
+    white-space: pre-line;
+}
